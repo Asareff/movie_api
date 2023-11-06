@@ -6,12 +6,12 @@ const server = http.createServer((req, res) => {
     const parsedUrl = url.parse(req.url, true);
     const pathname = parsedUrl.pathname;
   
-    // Log the request URL and timestamp to a "log.txt" file
+    // Log request URL and timestamp to a "log.txt" file
     const logData = `Request URL: ${pathname} - Timestamp: ${new Date()}\n`;
     fs.appendFile('log.txt', logData, (err) => {
       if (err) {
         console.error(err);
-      }
+      }a
     });
   
     if (pathname === '/documentation.html') {
