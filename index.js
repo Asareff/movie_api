@@ -1,7 +1,7 @@
 const express = require('express');
 const morgan = require('morgan');
 const app = express();
-const port = 3000; // Choosing a port number
+const port = 8080; // Choosing a port number
 
 app.use(express.static('public'));
 app.use(morgan('dev'));
