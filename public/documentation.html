@@ -16,31 +16,52 @@
       <th>Request</th>
       <th>URL</th>
       <th>Response</th>
+      <th>Parameters</th>
+      <th>Example Request</th>
+      <th>Example Response</th>
     </tr>
     <tr>
       <td>GET</td>
       <td>/movies</td>
       <td>Get information about all movies</td>
-    </tr>
-    <tr>
-      <td>GET</td>
-      <td>/movies/:id</td>
-      <td>Get information about a specific movie</td>
-    </tr>
-    <tr>
-      <td>POST</td>
-      <td>/movies</td>
-      <td>Create a new movie</td>
-    </tr>
-    <tr>
-      <td>PUT</td>
-      <td>/movies/:id</td>
-      <td>Update information for a specific movie</td>
-    </tr>
-    <tr>
-      <td>DELETE</td>
-      <td>/movies/:id</td>
-      <td>Delete a specific movie</td>
+      <td>None</td>
+      <td><code>GET /movies</code></td>
+      <td>
+        <pre>
+        {
+          "movies": [
+            {
+              "title": "Treasure Planet",
+              "director": "John Musker, Ron Clements",
+              "genre": "Animation",
+              "year": 2002,
+              "description": "Animated adventure",
+              "imageUrl": "https://example.com/treasureplanet.jpg",
+              "featured": true
+            },
+            {
+              "title": "Star Wars: Episode III - Revenge of the Sith",
+              "director": "George Lucas",
+              "genre": "Sci-Fi",
+              "year": 2005,
+              "description": "Epic space opera",
+              "imageUrl": "https://example.com/revengeofthesith.jpg",
+              "featured": true
+            },
+            {
+              "title": "Spider-Man: No Way Home",
+              "director": "Jon Watts",
+              "genre": "Action",
+              "year": 2021,
+              "description": "Superhero blockbuster",
+              "imageUrl": "https://example.com/spidermannowayhome.jpg",
+              "featured": true
+            },
+            // ... other movies
+          ]
+        }
+        </pre>
+      </td>
     </tr>
   </table>
 
@@ -50,35 +71,12 @@
       <th>Request</th>
       <th>URL</th>
       <th>Response</th>
-    </tr>
-    <tr>
-      <td>GET</td>
-      <td>/users</td>
-      <td>Get information about all users</td>
-    </tr>
-    <tr>
-      <td>GET</td>
-      <td>/users/:id</td>
-      <td>Get information about a specific user</td>
-    </tr>
-    <tr>
-      <td>POST</td>
-      <td>/users</td>
-      <td>Create a new user</td>
-    </tr>
-    <tr>
-      <td>PUT</td>
-      <td>/users/:id</td>
-      <td>Update information for a specific user</td>
-    </tr>
-    <tr>
-      <td>DELETE</td>
-      <td>/users/:id</td>
-      <td>Delete a specific user</td>
+      <th>Parameters</th>
+      <th>Example Request</th>
+      <th>Example Response</th>
     </tr>
   </table>
 
 </body>
 
 </html>
-
